@@ -6,7 +6,8 @@ import { CSSProperties } from 'react';
 export interface MessageData {
   id: number;
   name: string;
-  date: Date;
+  createdAt?: Date;
+  color: CSSProperties['color'];
   text: string;
 }
 export interface UserData {

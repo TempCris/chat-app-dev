@@ -2,6 +2,7 @@
 import { chatInfoActions } from '@Redux/chatInfo/actions';
 import { UserData } from '@Redux/chatInfo/customTypes';
 import { Avatar, Button, Col } from 'antd';
+import { auth } from 'AppConfig/firebase/appData';
 import { randomColors } from 'AppConfig/globalData';
 // ---UI Dependencies
 import { ReactElement } from 'react';
