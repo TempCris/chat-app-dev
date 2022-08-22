@@ -4,6 +4,7 @@ export declare global {
   };
   
   module '*.png';
+  module '*.jpg';
 }
 
 export type RandObj = { [s: string]: unknown; }

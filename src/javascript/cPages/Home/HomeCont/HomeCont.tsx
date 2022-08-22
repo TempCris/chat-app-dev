@@ -1,8 +1,8 @@
 // ---Dependencys
 import { ReactElement } from 'react';
 // ---Components
-import { HelloWorld } from 'Pages/Home/HomeCont/HelloWorld/HelloWorld';
-import { ProgressCustom } from 'Pages/Home/HomeCont/ProgressCustom/ProgressCustom';
+import { UserSelector } from 'CComps/UserSelector/UserSelector';
+import { OneChat } from './OneChat/OneChat';
 
 /**
  * HomeCont Component: Contenedor principal donde se construye todo el contenido de la pagina
@@ -15,8 +15,8 @@ export function HomeCont(): ReactElement {
   // -----------------------RENDER
   return (
     <div className="HomeCont">
-      <HelloWorld />
-      <ProgressCustom />
+      <UserSelector />
+      <OneChat />
     </div>
   );
 }

@@ -1,26 +1,116 @@
 // ----------------------------------GLOBALS------------------------------------
-//-----------------
-
+//-----------------UserSelector
+.UserSelector{
+  border: 1px solid @colorPrimary;
+  width: 96%;
+  margin: 10px auto 10px auto;
+  padding: 10px;
+  color: @colorNavButtons;
+  h1{
+    color: @colorNavButtons;
+    text-align: center;
+    font-weight: bold;
+  }
+  button{
+    border-radius: 3px;
+    height: 55px;
+    width: 90%;
+    height: fit-content;
+    margin-left: 5%;
+  }
+}
 // -------------------------------GlobalProvider------------------------------------
 //-----------------Navbar
 .Navbar{
-  background-color: @colorNavButtons;
+  &-desktop{
+    background: @colorNavButtons;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 47%, rgba(194,33,175,1) 85%, rgba(85,53,131,1) 100%); 
+  }
+  &-movil{
+    background: @colorNavButtons;
+  }
   width: 100%;
+  img{
+    width: 180px;
+    display: block;
+    margin: 0px auto;
+  }
+  button{
+    border-radius: 3px;
+    height: 55px;
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 //-----------------Footer
 .Footer{
   background-color: @colorNavButtons;
   width: 100%;
+  img{
+    width: 180px;
+    display: block;
+    margin: 10px auto;
+  }
 }
 //-----------------
 
 // ----------------------------------cPages------------------------------------
 //-----------------HomeCont
 .HomeCont{
-  border: 1px solid @colorPrimary;
-  width: 96%;
-  margin: 30px auto;
-  padding: 10px;
+  background-color: rgb(61, 61, 61);
+  width: 100%;
+  padding: 30px 10px;
+  .OneChat{
+    background-color: @colorNavButtons;
+    width: 96%;
+    margin: 30px auto;
+    display: block;
+    border-radius: 8px;
+    height: 500px;
+    .DisplayedMessages{
+      height: 420px;
+      width: 96%;
+      margin: 0px auto;
+      padding: 15px;
+      overflow-y: scroll;
+      .SelfMessage{
+        width: 100%;
+        display: block;
+        p{
+          background-color: rgb(142, 194, 255);
+          display: inline-block;
+          width: 89%;
+          padding: 18px;
+          border-radius: 8px 0px 8px 8px;
+          margin-right: 10px;
+        }
+      }
+      .OthersMessage{
+        width: 100%;
+        display: block;
+        p{
+          background-color: rgb(155, 155, 155);
+          display: inline-block;
+          width: 89%;
+          padding: 18px;
+          border-radius: 0px 8px 8px 8px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .MessageWritter{
+      background-color: @colorThreeDark;
+      height: 80px;
+      width: 100%;
+      color: @colorNavButtons;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 10px;
+      .button{
+        width: 90%;
+      }
+    }
+  }
 }
 //-----------------Error404Cont
 .Error404Cont{
