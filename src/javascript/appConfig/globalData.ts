@@ -29,7 +29,7 @@ export const users = [
   },
   {
     id: 1,
-    name: 'Kros',
+    name: 'Cris',
     color: '#1b35c7',
   },
   {
@@ -39,7 +39,7 @@ export const users = [
   },
   {
     id: 3,
-    name: 'Botz',
+    name: 'Tony',
     color: '#fa9420',
   },
   {
